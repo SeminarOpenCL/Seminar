@@ -12,7 +12,7 @@
 
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
+///////////////////////////////BACON///////////////////////////////////////////
 
 /*! StudXPass is a Pass and managed by the PassManager.
  *
@@ -206,7 +206,7 @@ utl::Seconds StudXPass1<Type_,Format_, W1,W2>::prof( utl::Dim const& dim )
 template <class Type_,class Format_ , size_t W1, size_t W2>
 double StudXPass1<Type_,Format_, W1,W2>::ops( utl::Dim const& dim )
 {
-	  size_t const M = dim[0];
+      size_t const M = dim[0];
 	  size_t const N = dim[1];
 	  //size_t const K = dim[2];
 
