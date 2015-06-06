@@ -34,7 +34,7 @@ int main()
     // can set an active queue.
     // note that there can only be one active queue within a context.
     context1.setActiveQueue(queue1);
-    context2.setActiveQueue(queue2);
+    //context2.setActiveQueue(queue2);
 
     std::string s;
     context1.activeQueue() == queue1 ? s = "active!" : s = "inactive!";
