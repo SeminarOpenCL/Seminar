@@ -30,17 +30,18 @@ int main()
     // create command queue.
     ocl::Queue queue1(context1, device);
     ocl::Queue queue2(context2, device);
+    ocl::Queue queue3(context2, device);
 
     // can set an active queue.
     // note that there can only be one active queue within a context.
     context1.setActiveQueue(queue1);
-    //context2.setActiveQueue(queue2);
+    context2.setActiveQueue(queue2);
 
     std::string s;
     context1.activeQueue() == queue1 ? s = "active!" : s = "inactive!";
     std::cout << "Queue 1 is on context 1 " << s << std::endl;
 
-    context2.activeQueue() == queue2 ? s = "active!" : s = "inactive!";
+    context2.activeQueue() == queue3 ? s = "active!" : s = "inactive!";
     std::cout << "Queue 2 is on context 2 " << s << std::endl;
 
     // create command queue which executes the commands out-of-order.
